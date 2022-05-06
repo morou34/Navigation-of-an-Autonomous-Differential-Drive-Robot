@@ -1,3 +1,6 @@
+Autonomous SLAM using a differential drive robot. 
+This work is a project for *Introduction to Robotics* class.
+
 # Prerequisites
 
 This project was developed for ROS Noetic (Ubuntu 20.04). The following
