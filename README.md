@@ -15,7 +15,7 @@ packages are required:
 5. You will also need to install the controller_manager package: `sudo apt-get install ros-noetic-controller-manager`
 6. The probabilistic localization system *amcl* is also needed, you can install it with: `sudo apt install ros-noetic-amcl`
 
-### Note: you might need to install more packages depending on what you have previously installed, if you have any problem just google it, and install the package needed.
+#### Note: you might need to install more packages depending on what you have previously installed, if you have any problem just google it, and install the package needed.
 
 # Usage
 1. Make sure you have the prerequisites installed.
