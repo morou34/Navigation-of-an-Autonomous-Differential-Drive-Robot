@@ -31,7 +31,7 @@ packages are required:
   ...
 </launch>
 ```
-![xx](./navros_pkg/screenshots/small_house.png)
+![](./navros_pkg/screenshots/small_house.png)
 
 4. Source your ROS in the Bash instance: `source
    /opt/ros/noetic/setup.bash` and `source ~/catkin_ws/devel/setup.bash`.
