@@ -44,6 +44,10 @@ packages are required:
 Keep this terminal running for all the next steps.
 
 ## Mapping
+3D occupancy grid map            |  2D occupancy grid map
+:-------------------------:|:-------------------------:
+![3D occupancy grid](./navros_pkg/screenshots/grid_slam.png)  |  ![2D occupancy grid](./navros_pkg/screenshots/map_slam.png)
+
 8. Run the gmapping SLAM command:`roslaunch navros_pkg gmapping.launch`
 9. Natigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d map.rviz`
 10. For OCTOMAP use:`roslaunch navros_pkg octomap.launch`
