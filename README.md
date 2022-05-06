@@ -17,7 +17,7 @@
 5. Run `catkin_make` in `~/catkin_ws/` and `source
    ~/catkin_ws/devel/setup.bash` again.   
    
-# Start Gazebo Simulation
+## Start Gazebo Simulation
 6. Start the simulation using: `roslaunch aws_robomaker_small_house_world view_small_house.launch`.
 7. Spawn the robot in the map using: `roslaunch navros_pkg urdf_gazebo_view.launch`.
 Keep this terminal running for all the next steps.
@@ -31,6 +31,15 @@ Then natigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run i
 12. Once mapping is complete, Save the map: `rosrun map_server map_saver ~/catkin_ws/src/navros_pkg/maps/name_of_map`
 if this command is not working for some reason, then run this `rosrun map_server map_saver` then copy the map generated in *src* directory to *~/catkin_ws/src/navros_pkg/maps/* directory.
 Finally close everything, and relaunch gazebo only with the robot (repeat steps 6 and 7).
+
+## Autonomous Navigation
+13. To start the navigation using the previously generated map, run each of the following commands in a new terminal:
+* A) `roslaunch navros_pkg amcl.launch map:='name_of_map'` if you picked a name for your map make sure to change *name_of_map* otherwise it should be *map* (check the name in the maps folder).
+* B) `roslaunch navros_pkg move_base.launch`
+* C) `cd catkin_ws/src/navros_pkg/rviz` then `rviz -d navigate.rviz`
+
+14. 
+
 
 
 ![Gzweb01](docs/images/gzweb_aws_house.png)## AWS Robomaker Small House World on Gzweb
