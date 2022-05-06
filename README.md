@@ -58,7 +58,7 @@ if this command is not working for some reason, then run this `rosrun map_server
 Finally close everything, and relaunch gazebo only with the robot (repeat steps 6 and 7).
 
 ## Autonomous Navigation
-![](./navros_pkg/screenshots/grid_slam.png)
+![](./navros_pkg/screenshots/navigation.png)
 
 13. To start the navigation using the previously generated map, run each of the following commands in a new terminal:
 * A) `roslaunch navros_pkg amcl.launch map:='name_of_map'` if you picked a name for your map make sure to change *name_of_map* otherwise it should be *map* (check the name in the maps folder).
