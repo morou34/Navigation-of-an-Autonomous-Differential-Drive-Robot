@@ -4,6 +4,14 @@
    into `~/catkin_ws/src/navros_pkg/`.
 3. Clone [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) repo into your catkin workspace, e.g.
    into `~/catkin_ws/src/small-house-world/`.
+   * Add the following to your launch file:
+```xml
+<launch>
+  <!-- Launch World -->
+  <include file="$(find aws_robomaker_small_house_world)/launch/small_house.launch"/>
+  ...
+</launch>
+```
 4. Source your ROS in the Bash instance: `source
    /opt/ros/noetic/setup.bash` and `source ~/catkin_ws/devel/setup.bash`.
 5. Run `catkin_make` in `~/catkin_ws/` and `source
