@@ -48,10 +48,12 @@ Keep this terminal running for all the next steps.
 :-------------------------:|:-------------------------:
 ![](./navros_pkg/screenshots/grid_slam.png)  |  ![](./navros_pkg/screenshots/map_slam.png)
 
+![](./navros_pkg/screenshots/map_slam.png)
+
 8. Run the gmapping SLAM command:`roslaunch navros_pkg gmapping.launch`
-9. Natigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d map.rviz`
+9. Navigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d map.rviz`
 10. For OCTOMAP use:`roslaunch navros_pkg octomap.launch`
-Then natigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d octomap.rviz`
+Then navigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d octomap.rviz`
 11. To control the drone manually, you use: `rosrun teleop_twist_keyboard teleop_twist_keyboard.py` but it requires [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package to be installed.
 12. Once mapping is complete, Save the map: `rosrun map_server map_saver ~/catkin_ws/src/navros_pkg/maps/name_of_map`
 if this command is not working for some reason, then run this `rosrun map_server map_saver` then copy the map generated in *src* directory to *~/catkin_ws/src/navros_pkg/maps/* directory.
