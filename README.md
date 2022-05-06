@@ -2,7 +2,20 @@
 
 This project was developed for ROS Noetic (Ubuntu 20.04). The following
 packages are required:
-1. [pointcloud_to_laserscan package](http://wiki.ros.org/pointcloud_to_laserscan), is used to converts a 3D Point Cloud into a 2D laser scan, this can be installed using: `sudo apt install ros-noetic-pointcloud-to-laserscan ros-noetic-rosbridge-server`
+1. [pointcloud_to_laserscan package](http://wiki.ros.org/pointcloud_to_laserscan), is used to convert a 3D Point Cloud into a 2D laser scan, this can be installed using: `sudo apt install ros-noetic-pointcloud-to-laserscan ros-noetic-rosbridge-server`
+2. To control the robot, you might need to install the [teleop_twist_keyboard package](http://wiki.ros.org/teleop_twist_keyboard) and then run teleop_twist_keyboard teleop_twist_keyboard.py.
+3. [OctoMap](http://wiki.ros.org/octomap) is used to generate the 3D occupancy
+   grid. `octomap_server` is used to interface OctoMap with ROS, both can be
+   installed via `apt` as `ros-noetic-octomap` and `ros-noetic-octomap-ros`.
+
+4. You'll need to install the [OctoMap RViz
+   plugin](https://github.com/OctoMap/octomap_rviz_plugins) via `apt` as
+   `ros-noetic-octomap-rviz-plugins`. Without it, occupancy grid
+   visualisations in RViz will not work.
+5. You will also need to install the controller_manager package: `sudo apt-get install ros-noetic-controller-manager`
+6. The probabilistic localization system *amcl* is also needed, you can install it with: `sudo apt install ros-noetic-amcl`
+
+### Note: you might need to install more packages depending on what you have previously installed, if you have any problem just google it, and install the package needed.
 
 # Usage
 1. Make sure you have the prerequisites installed.
