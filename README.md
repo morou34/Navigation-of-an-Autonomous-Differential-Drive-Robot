@@ -1,5 +1,7 @@
 # Usage
-1* Make sure you have the prerequisites installed.
+1. Make sure you have the prerequisites installed.
+2. Clone this repo into your [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), e.g.
+   into `~/catkin_ws/src/ navros_pkg/`.
 # AWS RoboMaker Small House World ROS package
 
 ![Gazebo01](docs/images/gazebo_01.png)
