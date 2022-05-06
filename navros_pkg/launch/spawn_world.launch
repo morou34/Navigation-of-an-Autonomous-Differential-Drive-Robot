@@ -1,0 +1,5 @@
+<launch>
+  <!-- Launch World -->
+  <include file="$(find aws_robomaker_small_house_world)/launch/small_house.launch"/>
+  ...
+</launch>
