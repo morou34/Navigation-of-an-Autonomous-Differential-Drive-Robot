@@ -4,12 +4,14 @@
    into `~/catkin_ws/src/navros_pkg/`.
 3. Clone [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) repo into your catkin workspace, e.g.
    into `~/catkin_ws/src/small-house-world/`.
+4. Source your ROS in the Bash instance: `source
+   /opt/ros/noetic/setup.bash` and `source ~/catkin_ws/devel/setup.bash`.
+5. Run `catkin_make` in `~/catkin_ws/` and `source
+   ~/catkin_ws/devel/setup.bash` again.   
    
-   
-   
-   
-   
-# AWS RoboMaker Small House World ROS package
+# Start Gazebo Simulation
+6. Start the simulation using: `roslaunch aws_robomaker_small_house_world view_small_house.launch`.
+7. Spawn the robot in the map using: `roslaunch navros_pkg urdf_gazebo_view.launch`.
 
 ![Gazebo01](docs/images/gazebo_01.png)
 
