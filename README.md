@@ -1,3 +1,9 @@
+# Prerequisites
+
+This project was developed for ROS Noetic (Ubuntu 20.04). The following
+packages are required:
+1. [pointcloud_to_laserscan package](http://wiki.ros.org/pointcloud_to_laserscan), is used to converts a 3D Point Cloud into a 2D laser scan, this can be installed using: `sudo apt install ros-noetic-pointcloud-to-laserscan ros-noetic-rosbridge-server`
+
 # Usage
 1. Make sure you have the prerequisites installed.
 2. Clone this repo into your [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), e.g.
@@ -40,9 +46,11 @@ Finally close everything, and relaunch gazebo only with the robot (repeat steps 
 
 14. Test navigation using rviz:
 * Set initial pose (Click "2D pose estimate" and pinpoint the approximate location of robot on map).*
-    Red arrows indicate the probable location.
-*Set goal for the robot in RVIZ (Click "2D Nav goal" and pinpoint the desired goal on the map).
-    Green line indicates the path planned.
+* Red arrows indicate the probable location.
+* Set goal for the robot in RVIZ (Click "2D Nav goal" and pinpoint the desired goal on the map).
+* Green line indicates the path planned.
+
+15. Thanks and PROFIT
 
 
 
