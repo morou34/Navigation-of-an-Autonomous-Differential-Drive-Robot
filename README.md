@@ -1,6 +1,9 @@
 Autonomous SLAM using a differential drive robot. 
 This work is a project for *Introduction to Robotics* class.
 
+# Overview
+There are two videos showing the whole setup in action: [Building a map of the environment | ROS Gmapping | Octomap](https://youtu.be/mLMfofIn_PM) and [Autonomous Robot navigation using the ROS Navigation](https://youtu.be/94Ar3pGP3KM).  Images of
+the final 3D occupancy grid can be seen below.
 # Prerequisites
 
 This project was developed for ROS Noetic (Ubuntu 20.04). The following
