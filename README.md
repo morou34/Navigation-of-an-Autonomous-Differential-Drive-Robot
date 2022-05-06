@@ -48,8 +48,6 @@ Keep this terminal running for all the next steps.
 :-------------------------:|:-------------------------:
 ![](./navros_pkg/screenshots/grid_slam.png)  |  ![](./navros_pkg/screenshots/map_slam.png)
 
-![](./navros_pkg/screenshots/map_slam.png)
-
 8. Run the gmapping SLAM command:`roslaunch navros_pkg gmapping.launch`
 9. Navigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d map.rviz`
 10. For OCTOMAP use:`roslaunch navros_pkg octomap.launch`
