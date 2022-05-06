@@ -31,6 +31,7 @@ packages are required:
   ...
 </launch>
 ```
+(./navros_pkg/screenshots/small_house.png)
 4. Source your ROS in the Bash instance: `source
    /opt/ros/noetic/setup.bash` and `source ~/catkin_ws/devel/setup.bash`.
 5. Run `catkin_make` in `~/catkin_ws/` and `source
