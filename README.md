@@ -46,7 +46,7 @@ Keep this terminal running for all the next steps.
 ## Mapping
 3D occupancy grid map            |  2D occupancy grid map
 :-------------------------:|:-------------------------:
-![](./navros_pkg/screenshots/grid_slam.png)  |  ![](./navros_pkg/screenshots/grid_slam.jpg)
+![](./navros_pkg/screenshots/grid_slam.jpg)  |  ![](./navros_pkg/screenshots/grid_slam.png)
 
 8. Run the gmapping SLAM command:`roslaunch navros_pkg gmapping.launch`
 9. Navigate to rviz folder using:`cd catkin_ws/src/navros_pkg/rviz` then run it using: `rviz -d map.rviz`
@@ -58,6 +58,8 @@ if this command is not working for some reason, then run this `rosrun map_server
 Finally close everything, and relaunch gazebo only with the robot (repeat steps 6 and 7).
 
 ## Autonomous Navigation
+![](./navros_pkg/screenshots/grid_slam
+
 13. To start the navigation using the previously generated map, run each of the following commands in a new terminal:
 * A) `roslaunch navros_pkg amcl.launch map:='name_of_map'` if you picked a name for your map make sure to change *name_of_map* otherwise it should be *map* (check the name in the maps folder).
 * B) `roslaunch navros_pkg move_base.launch`
